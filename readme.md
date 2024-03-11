@@ -24,3 +24,6 @@ Additionally, the challenge will encourage developers to showcase their creativi
 - Game must be in 2D.
 - A general theme or genre for the game will be determined as a starting point. However, developers are free to add any content they wish.
 - Random elements or challenges can be introduced at the start of a week, adding an extra layer of unpredictability to the process.
+
+## Theme: Phobia & Rebirth
+This theme challenges you to create a game experience that immerses players in confronting phobias and anxieties, while providing a transformative path towards persevering and achieving metaphorical or literal rebirth.
