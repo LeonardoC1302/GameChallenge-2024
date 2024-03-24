@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class FollowObject : MonoBehaviour
 {
-    public Transform target; // Reference to the object the camera will follow
-    public Vector3 offset = new Vector3(0f, 3f, -10f);
-    void Start()
-    {
+    public Vector3 offset = new Vector3(0f, 0f, -10f);
+    private float smoothTime = 0.25f;
+    private Vector3 velocity = Vector3.zero;
 
-    }
-
+    [SerializeField] private Transform target;
      void Update()
     {
-        if (target != null)
-        {
-            // Update the position of the camera to match the position of the target plus the offset
-            transform.position = target.position + offset;
-        }
+        Vector3 targetPosition = target.position + offset;
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
 }

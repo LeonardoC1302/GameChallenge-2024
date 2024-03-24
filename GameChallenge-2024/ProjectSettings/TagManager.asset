@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Logic
   - Background
+  - SpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX
